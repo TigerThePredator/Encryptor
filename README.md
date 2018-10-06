@@ -1,5 +1,7 @@
 # Encryptor
-This is a Java program that allows the user to encrypt and decrypt data using AES in CBC mode.
+This is a Java program that allows the user to encrypt and decrypt data so that it can be sent to another person without a third-party knowing what is inside the data. AES is used as the cipher in this implementation to ensure that your data will not be broken. GCM mode is used to automatically authenticate the encrypted data. As you can see in the image below, you can type in any secure password, and the SHA256 hash of the password will be used to generate the keys. Every time you click on the encrypt button, the data in the "plaintext" field will be encrypted using the generated AES keys, and the encrypted data will be outputted in the "ciphertext" field. Vice versa for the decrypt button. The initialization vector (IV) will be recreated using the Java SecureRandom class every time the encrypt function is run, which is why the ciphertext may appear to be different if you click the encrypt button several times. After typing in the password on the JTextAreas on the left side, you can encrypt/decrypt data using the buttons on the right side of the GUI. There are also copy/paste functions built into the program to make copying and pasting simple (if you copy anything sensitive, be sure to clear the clipboard later).
+
+![Encryptor image](https://image.ibb.co/ks25rz/encryptor.png)
 
 # Usage
 You can start the program by executing the Start.class file. Since this project was made using eclipse, you can also open this project in eclipse (or another IDE that supports eclipse project files) and edit it through there. Finally, all the code is located in the /src/ directory, so you should be able to easily view and edit it.
