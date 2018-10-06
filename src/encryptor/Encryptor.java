@@ -1,4 +1,4 @@
-package com.github.tigerthepredator.encryptor;
+package encryptor;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;

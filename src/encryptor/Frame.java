@@ -1,4 +1,4 @@
-package com.github.tigerthepredator.encryptor;
+package encryptor;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
